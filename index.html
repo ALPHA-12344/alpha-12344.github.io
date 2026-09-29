@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    ============================================================
+    BEFORE YOU PUBLISH — replace these placeholders in this <head>:
+      - USERNAME  → your GitHub username (appears in the URLs below)
+    Your WhatsApp number, email and GitHub link are set in ONE place:
+      js/main.js  → the SITE settings at the top of the file.
+    ============================================================
+  -->
+
+  <!-- ===== SEO basics ===== -->
+  <title>Mamadou Alpha Diallo | Web Developer in Accra for -Businesses</title>
+  <meta name="description" content="I'm Alpha, a web developer in Accra, Ghana. I build fast, mobile-friendly websites for restaurants and small businesses, with online menus and WhatsApp ordering.">
+  <meta name="author" content="Mamadou Alpha Diallo">
+  <link rel="canonical" href="https://github.com/ALPHA-12344">
+
+  <!-- Tells the browser this site supports light and dark mode -->
+  <meta name="color-scheme" content="light dark">
+  <!-- Colour of the browser bar on phones -->
+  <meta name="theme-color" content="#c2410c" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#13110f" media="(prefers-color-scheme: dark)">
+
+  <!-- ===== Open Graph: controls the preview when the link is shared on WhatsApp, Facebook, LinkedIn ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Alpha Diallo">
+  <meta property="og:title" content="Alpha Diallo | Websites for businesses in Accra">
+  <meta property="og:description" content="Fast, mobile-friendly websites for restaurants and small businesses in Accra, with online menus and WhatsApp ordering.">
+  <meta property="og:url" content="https://USERNAME.github.io/">
+  <!-- og:image MUST be a full URL (https://...) or WhatsApp will not show it -->
+  <meta property="og:image" content="https://USERNAME.github.io/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alpha Diallo: I build fast, mobile-friendly websites for businesses in Accra">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ===== Favicons ===== -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- ===== Google Font (the only external resource) ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Adds a "js" class to <html> so the CSS knows JavaScript is running.
+       (Scroll animations only hide content when JS is available.) -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- "defer" = download now, run after the HTML is ready. projects.js must load before main.js. -->
+  <script src="js/projects.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- Structured data: helps Google understand who you are -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mamadou Alpha Diallo",
+    "alternateName": "Alpha Diallo",
+    "jobTitle": "Web Developer",
+    "url": "https://USERNAME.github.io/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Accra", "addressCountry": "GH" },
+    "knowsLanguage": ["fr", "en"],
+    "sameAs": ["https://github.com/USERNAME"]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ===== SVG ICON SPRITE =====
+       Every icon is defined once here, then reused with:
+       <svg class="icon"><use href="#i-name"></use></svg>
+       No icon library needed, so the site stays fast. -->
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </symbol>
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></g>
+    </symbol>
+    <symbol id="i-external" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></g>
+    </symbol>
+    <symbol id="i-code" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></g>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></g>
+    </symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></g>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></g>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></g>
+    </symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></g>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></g>
+    </symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></g>
+    </symbol>
+    <symbol id="i-book" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></g>
+    </symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></g>
+    </symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></g>
+    </symbol>
+    <symbol id="i-send" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></g>
+    </symbol>
+  </svg>
+
+  <!-- Lets keyboard users jump straight past the menu -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero" aria-label="Alpha Diallo, back to top">
+        <span class="logo-mark" aria-hidden="true">A</span>
+        <span class="logo-text">Alpha Diallo</span>
+      </a>
+
+      <!-- Hamburger button: only visible on phones (hidden by CSS on wider screens) -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="nav-cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Web developer · Accra, Ghana</p>
+          <h1 id="hero-title">I build fast, mobile-friendly websites for <span class="text-accent">businesses in&nbsp;Accra</span></h1>
+          <p class="hero-sub">
+            Hi, I'm Alpha. I help restaurants and small businesses get a professional
+            website that looks great on any phone, loads quickly, and makes it easy for
+            customers to order or get in touch on WhatsApp.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">
+              See my work
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <!-- data-link="whatsapp": main.js fills in the real WhatsApp link -->
+            <a class="btn btn-whatsapp" href="https://wa.me/233XXXXXXXXX" data-link="whatsapp">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <ul class="hero-points">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Designed for phones first</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Fast, even on mobile data</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>English &amp; French</li>
+          </ul>
+        </div>
+
+        <!-- Decorative phone mock-up (pure HTML/CSS, no image to download).
+             aria-hidden because it is decoration, not real content. -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="mock-bar">
+                <span class="mock-logo">Nana's Kitchen</span>
+                <span class="mock-menu-icon"><i></i><i></i><i></i></span>
+              </div>
+              <div class="mock-hero">
+                <span class="mock-kicker">Osu, Accra</span>
+                <span class="mock-title">A taste of home, served fresh daily</span>
+              </div>
+              <ul class="mock-list">
+                <li><span>Jollof rice &amp; chicken</span><b>GH₵ 85</b></li>
+                <li><span>Waakye special</span><b>GH₵ 60</b></li>
+                <li><span>Kelewele</span><b>GH₵ 30</b></li>
+                <li><span>Banku &amp; tilapia</span><b>GH₵ 95</b></li>
+                <li><span>Red red &amp; plantain</span><b>GH₵ 55</b></li>
+                <li><span>Sobolo (chilled)</span><b>GH₵ 15</b></li>
+              </ul>
+              <span class="mock-order">
+                <svg class="icon"><use href="#i-whatsapp"></use></svg>
+                Order on WhatsApp
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS / WORK ================= -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2 id="work-title">Selected work</h2>
+          <p class="section-intro">Real projects I have designed and built, from business websites to full web applications.</p>
+        </div>
+
+        <!-- Filter buttons. data-filter must match a project's "category" in js/projects.js -->
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="business" aria-pressed="false">Business sites</button>
+          <button class="filter-btn" type="button" data-filter="webapp" aria-pressed="false">Web apps</button>
+        </div>
+
+        <!-- Screen readers hear how many projects are shown after filtering -->
+        <p class="visually-hidden" id="projects-status" role="status" aria-live="polite"></p>
+
+        <!-- Project cards are created by js/main.js using the data in js/projects.js -->
+        <div class="projects-grid" id="projects-grid"></div>
+
+        <noscript>
+          <p class="projects-empty">Please turn on JavaScript to see my projects, or visit my GitHub profile.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section section-alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">How I can help your business</h2>
+          <p class="section-intro">Simple, clear services for restaurants, shops and small businesses. No confusing tech talk, just a website that works for you.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-monitor"></use></svg></span>
+            <h3>Restaurant &amp; business websites</h3>
+            <p>A professional website that shows customers who you are, what you offer and how to find you, designed first for the phones your customers use every day.</p>
+            <ul class="check-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Looks great on every phone</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Opening hours, photos &amp; Google Maps</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Loads fast, even on mobile data</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-phone"></use></svg></span>
+            <h3>Online menus &amp; WhatsApp ordering</h3>
+            <p>Put your full menu online with photos and prices. Customers tap one button and their order arrives straight in your WhatsApp. No extra app to install.</p>
+            <ul class="check-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Menu that is easy to update</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>One-tap orders on WhatsApp</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>QR code for your tables</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true"><svg class="icon"><use href="#i-tool"></use></svg></span>
+            <h3>Website updates &amp; maintenance</h3>
+            <p>Already have a website? I keep it up to date, fix what's broken and make it faster, so you can focus on running your business.</p>
+            <ul class="check-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>New prices, photos &amp; menus</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Speed and security check-ups</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Support in English or French</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Call-to-action band for business owners -->
+        <div class="cta-band reveal">
+          <div>
+            <h3>Have a business in Accra?</h3>
+            <p>Tell me about it on WhatsApp and I'll suggest what would work best for you.</p>
+          </div>
+          <a class="btn btn-whatsapp" href="https://wa.me/233XXXXXXXXX" data-link="whatsapp">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <p class="eyebrow">About me</p>
+          <h2 id="about-title">Hi, I'm Alpha</h2>
+          <p>
+            I'm Mamadou Alpha Diallo, a web developer and computing student based in Accra.
+            French is my first language and I work comfortably in English, so I can help
+            businesses that serve both local and international customers.
+          </p>
+          <p>
+            I'm studying for the NCC Education Level 5 Advanced Diploma in Computing with
+            Business Management at IPMC. That mix means I don't see a website as just code:
+            I see it as a tool that should bring in customers and save you time.
+          </p>
+          <p>
+            I enjoy building things real people use, from a restaurant website to a platform
+            that protects students from rental fraud. I care about clean code, fast pages and
+            designs that work as well on a budget phone as on a new laptop.
+          </p>
+          <a class="btn btn-outline" href="#contact">
+            Let's work together
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+          </a>
+        </div>
+
+        <div class="about-cards">
+          <article class="info-card reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg>Education</h3>
+            <p class="info-title">NCC Education Level 5 Advanced Diploma in Computing with Business Management</p>
+            <p class="info-meta">IPMC, Accra · In progress</p>
+          </article>
+
+          <article class="info-card reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-layers"></use></svg>Skills</h3>
+            <div class="skill-group">
+              <h4>Front-end</h4>
+              <ul class="chip-list">
+                <li class="chip">HTML</li>
+                <li class="chip">CSS</li>
+                <li class="chip">JavaScript</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4>Back-end &amp; databases</h4>
+              <ul class="chip-list">
+                <li class="chip">PHP</li>
+                <li class="chip">MySQL</li>
+                <li class="chip chip-learning">Laravel <span>(learning)</span></li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4>Content management</h4>
+              <ul class="chip-list">
+                <li class="chip">WordPress</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="info-card reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg>Languages</h3>
+            <ul class="lang-list">
+              <li><span>French</span><span class="lang-level">Native</span></li>
+              <li><span>English</span><span class="lang-level">Fluent</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's build your website</h2>
+          <p class="section-intro">
+            The quickest way to reach me is WhatsApp. You can also send an email or use the form.
+            Employers and universities are welcome too.
+          </p>
+
+          <ul class="contact-methods">
+            <li>
+              <a class="contact-method" href="https://wa.me/233XXXXXXXXX" data-link="whatsapp">
+                <span class="contact-icon contact-icon-wa" aria-hidden="true"><svg class="icon"><use href="#i-whatsapp"></use></svg></span>
+                <span>
+                  <span class="contact-label">WhatsApp</span>
+                  <span class="contact-value" data-text="whatsapp">+233 XX XXX XXXX</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-method" href="mailto:your@email.com" data-link="email">
+                <span class="contact-icon" aria-hidden="true"><svg class="icon"><use href="#i-mail"></use></svg></span>
+                <span>
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value" data-text="email">your@email.com</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-method" href="https://github.com/username" data-link="github">
+                <span class="contact-icon" aria-hidden="true"><svg class="icon"><use href="#i-github"></use></svg></span>
+                <span>
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value" data-text="github">github.com/username</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <div class="contact-method contact-method-static">
+                <span class="contact-icon" aria-hidden="true"><svg class="icon"><use href="#i-pin"></use></svg></span>
+                <span>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Accra, Ghana</span>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ===== Contact form (sent by Formspree, because GitHub Pages can't run PHP) =====
+             1. Create a free form at https://formspree.io
+             2. Replace YOUR_FORM_ID below with your form ID (e.g. xayzabcd)
+             "novalidate" turns off the browser's pop-ups so our own friendly messages show instead. -->
+        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xljdawge" method="POST" novalidate>
+          <h3 class="form-title">Send a message</h3>
+          <p class="form-note">All fields are required.</p>
+
+          <div class="form-field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+            <p class="field-error" id="name-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-error">
+            <p class="field-error" id="email-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error" placeholder="Tell me about your business or project…"></textarea>
+            <p class="field-error" id="message-error"></p>
+          </div>
+
+          <!-- Email subject Formspree will use -->
+          <input type="hidden" name="_subject" value="New message from your portfolio">
+          <!-- Spam trap: humans never see this field, bots fill it in -->
+          <input class="visually-hidden" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <button class="btn btn-primary btn-block" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="#i-send"></use></svg>
+            <span class="btn-label">Send message</span>
+          </button>
+
+          <!-- Success / error message after sending -->
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="year">2026</span> Mamadou Alpha Diallo · Built with HTML, CSS &amp; JavaScript
+      </p>
+      <ul class="social-list">
+        <li>
+          <a class="social-link" href="https://wa.me/233XXXXXXXXX" data-link="whatsapp" aria-label="WhatsApp">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="mailto:your@email.com" data-link="email" aria-label="Email">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://github.com/username" data-link="github" aria-label="GitHub">
+            <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="#hero" aria-label="Back to top">
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"></use></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button (shown on phones and tablets only, see CSS) -->
+  <a class="whatsapp-float" href="https://wa.me/233XXXXXXXXX" data-link="whatsapp" aria-label="Chat with Alpha on WhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+  </a>
+</body>
+</html>
