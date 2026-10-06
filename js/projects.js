@@ -41,7 +41,7 @@ const projects = [
     category: "webapp",
     image: "images/safearrival.svg",
     imageAlt: "SafeArrival dashboard showing a protected rental payment",
-    liveUrl: "", // TODO: live URL
+    liveUrl: "https://safearrival.wuaze.com/", // TODO: live URL
     githubUrl: "", // TODO: GitHub repository URL
     featured: true,
   },
