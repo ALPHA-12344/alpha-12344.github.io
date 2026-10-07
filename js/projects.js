@@ -53,7 +53,7 @@ const projects = [
     category: "webapp",
     image: "images/foodfusion.svg",
     imageAlt: "FoodFusion recipe website home page",
-    liveUrl: "", // TODO: live URL
+    liveUrl: "https://foodfusioncook.infinityfreeapp.com", // TODO: live URL
     githubUrl: "", // TODO: GitHub repository URL
     featured: false,
   },
